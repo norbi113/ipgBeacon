@@ -3,7 +3,6 @@ package com.mbww.ipgbeacon
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import android.widget.TextView
 import com.estimote.scanning_sdk.api.EstimoteBluetoothScannerFactory
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.database.FirebaseDatabase
@@ -12,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     private var mFirebaseAnalytics: FirebaseAnalytics? = null
 
-    override fun onCreate(savedInstanceState: Bundle?): Double {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
@@ -21,12 +20,7 @@ class MainActivity : AppCompatActivity() {
                     .withBalancedPowerMode()
                     .withOnPacketFoundAction {
                         Log.d("Full Telemetry", "Got Full Telemetry packet: $it")
-                        var temperature = it.temperatureInCelsiusDegrees
-                        val textView: TextView = findViewById<TextView>(R.id.telemetryData)
-                        textView.setOnClickListener {
-                            textView.text = temperature
                         }
-                    }
                     .start()
 
         val database = FirebaseDatabase.getInstance()
