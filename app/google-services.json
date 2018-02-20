@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "969400761754",
+    "firebase_url": "https://ipgbeacon-70a8e.firebaseio.com",
+    "project_id": "ipgbeacon-70a8e",
+    "storage_bucket": "ipgbeacon-70a8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969400761754:android:e953aa4eb036cb9e",
+        "android_client_info": {
+          "package_name": "com.mbww.ipgbeacon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969400761754-9eleucie788b26t1eu8nboudr00d310u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mbww.ipgbeacon",
+            "certificate_hash": "78ea1e0dbc34fd414fc4ce67f65b3441dd8866f7"
+          }
+        },
+        {
+          "client_id": "969400761754-adij12lk42e1q0l1omg2nv9cjq0d1k4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbp493RyMXtjvf-yEQWnKG5EN9ukv6DTA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969400761754-adij12lk42e1q0l1omg2nv9cjq0d1k4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
