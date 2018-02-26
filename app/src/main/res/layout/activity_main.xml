@@ -46,4 +46,49 @@
         android:text="Waiting for data..."
         android:layout_margin="5dp" />
 
+    <TextView
+        android:id="@+id/checkTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#E91E63"
+        android:text="Waiting for IF..."
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/checkMagnetometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#E91E63"
+        android:text="Waiting for IF..."
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/checkPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#E91E63"
+        android:text="Waiting for IF..."
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/checkLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#E91E63"
+        android:text="Waiting for IF..."
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/checkMotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#E91E63"
+        android:text="Waiting for IF..."
+        android:layout_margin="5dp" />
+
 </android.support.v7.widget.LinearLayoutCompat>
