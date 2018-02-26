@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.estimote.scanning_sdk.api.EstimoteBluetoothScannerFactory
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -62,7 +65,30 @@ class MainActivity : AppCompatActivity() {
                         }else{
                             var checkMotion: TextView = findViewById<TextView>(R.id.checkMotion)
                             checkMotion.setText("Motion off!")
-                        }
+                                                    }
+
+                        val database = FirebaseDatabase.getInstance()
+
+                        val refTemperature = database.getReference("temperature")
+                        val dbTemperature = checkTemperature.getText().toString()
+                        refTemperature.setValue(dbTemperature)
+
+                        val refMagnetometer = database.getReference("magnetometer")
+                        val dbMagnetometer = checkMagnetometer.getText().toString()
+                        refMagnetometer.setValue(dbMagnetometer)
+
+                        val refPressure = database.getReference("pressure")
+                        val dbPressure = checkPressure.getText().toString()
+                        refPressure.setValue(dbPressure)
+
+                        val refLight = database.getReference("light")
+                        val dbLight = checkLight.getText().toString()
+                        refLight.setValue(dbLight)
+
+                        val refMotion = database.getReference("motion")
+                        val dbMotion = checkMotion.getText().toString()
+                        refMotion.setValue(dbMotion)
+
                     }
                     .start()
     }
